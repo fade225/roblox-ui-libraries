@@ -1,7 +1,7 @@
 repeat
 	task["wait"]()
 until game:IsLoaded()
-
+--
 -- > ( luraph variables )
 
 if not LPH_OBFUSCATED then
