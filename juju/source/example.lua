@@ -15,6 +15,12 @@ group:create_tab("example_tab")
 --[[ group:create_section will error if a tab is not created beforehand ]]
 local section = group:create_section("example_tab", "example_section", 1, 1, 0)
 
+--[[ Creating a panel/list | (tabName, name, side [1 = left, 2 = right], favorites, configs) ]]
+local list = group:create_panel_section("example_tab", "options", 2, true, false)
+
+--[[ Add item to panel / list ]]
+list:add_item({["text"] = "a"})
+
 --[[ Creating elements is different from other UI libraries ]]
 --[[ Each element has different properties, every element is created with create_element ]]
 --[[ Colorpicker example ]]
@@ -85,6 +91,16 @@ local tb_example = section:create_element({
     ["textbox"] = {
         ["default"] = "some text",
         ["flag"] = "textbox_flag", -- <- Double click
+    }
+})
+
+--[[ Keybind example ]]
+local kb_example = section:create_element({
+    ["name"] = "keybind example"
+}, {
+    ["keybind"] = {
+        ["flag"] = "keybind_flag",
+        ["default"] = Enum["KeyCode"]["RightShift"]
     }
 })
 
