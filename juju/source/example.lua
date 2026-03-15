@@ -1,5 +1,5 @@
 --[[ For more in depth and detail docs, visit this link if it's still available: https://panduh.gitbook.io/panduh-docs ]]
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fade225/roblox-ui-libraries/refs/heads/main/juju/source.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/fade225/roblox-ui-libraries/refs/heads/main/juju/source/source.lua"))()
 
 --[[ Creating a new window ]]
 --[[ You dont need to call something, the window is created automatically. Use library["menu"] to access it ]]
