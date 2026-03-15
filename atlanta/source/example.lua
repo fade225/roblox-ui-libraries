@@ -1,6 +1,6 @@
 --[[ A base example, check the source for more API ]]
 
-local library, themes = loadstring(game:HttpGet("https://raw.githubusercontent.com/fade225/roblox-ui-libraries/refs/heads/main/atlanta/source.lua"))()
+local library, themes = loadstring(game:HttpGet("https://raw.githubusercontent.com/fade225/roblox-ui-libraries/refs/heads/main/atlanta/source/source.lua"))()
 
 local dim2 = UDim2.new
 local hex = Color3.fromHex 
